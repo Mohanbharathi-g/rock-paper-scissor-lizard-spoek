@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Lizard</title>
+
+    <!-- fontAwesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="title-container">
+            <div class="info-container">
+                <span class="title">rock</span>
+                <span class="title">paper</span>
+                <span class="title">scissor</span>
+                <span class="title">lizard</span>
+                <span class="title">spock</span>
+            </div>
+            <div class="score-container">
+                <p>User score:<span class="user-score">0</span></p>
+                <p>Computer score:<span class="comp-score">0</span></p>
+            </div>
+
+        </div>
+        <div class="button-container">
+            <button class="btn-icon" onclick="playGame(`rock`)"><i class="fa-solid fa-hand-back-fist"></i></button>
+            <button class="btn-icon" onclick="playGame(`paper`)"><i class="fa-solid fa-hand"></i></button>
+            <button class="btn-icon" onclick="playGame(`scissors`)"><i class="fa-solid fa-hand-scissors"></i></button>
+            <button class="btn-icon" onclick="playGame(`lizard`)"><i class="fa-solid fa-hand-lizard"></i></button>
+            <button class="btn-icon" onclick="playGame(`spock`)"><i class="fa-solid fa-hand-spock"></i></button>
+        </div>
+        <div class="result-container">
+            <p class="user-choice"></p>
+            <p class="comp-choice"></p>
+            <p class="result-choice"></p>
+        </div>
+    </div>
+    
+
+    
+    <!-- custom script -->
+    <script src="./scripts/script.js">
+        
+    </script>
+
+    
+</body>
+</html>
